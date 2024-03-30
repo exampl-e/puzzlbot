@@ -1,4 +1,5 @@
 const fs = require('fs');
+require('dotenv').config();
 const { Client, Collection, Intents, MessageEmbed } = require('discord.js');
 const TOKEN = process.env.TOKEN;
 const keepAlive = require("./server");
