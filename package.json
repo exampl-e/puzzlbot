@@ -24,7 +24,6 @@
     "@discordjs/rest": "^0.1.0-canary.0",
     "@firebase/app": "^0.7.8",
     "@firebase/database": "^0.12.4",
-    "@replit/database": "^2.0.1",
     "axios": "^1.6.7",
     "body-parser": "^1.20.0",
     "chroma-js": "^2.4.2",
