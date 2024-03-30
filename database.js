@@ -1,6 +1,6 @@
-const Database = require("@replit/database");
+// const Database = require("@replit/database");
 
-const db = new Database();
+const db = {};
 
 const database = {};
 module.exports = database;
@@ -9,19 +9,24 @@ db.get("users").then(console.log);
 
 database.getwhole = function(fn) {
   // doesn't work
-  db.get("/").then(value => { fn(value) });
+  // db.get("/").then(value => { fn(value) });
+  fn({});
 }
 database.getusers = function(fn) {
-  db.get("users").then(value => { fn(value) });
+  //db.get("users").then(value => { fn(value) });
+  fn({});
 }
 database.setusers = function(users, fn) {
-  db.set("users", users).then(fn);
+  //db.set("users", users).then(fn);
+  fn(users);
 }
 database.getlevels = function(fn) {
-  db.get("levels").then(value => { fn(value) });
+  //db.get("levels").then(value => { fn(value) });
+  fn({});
 }
 database.setlevels = function(levels) {
-  db.set("levels", levels).then(() => { });
+  //db.set("levels", levels).then(() => { });
+  //fn(levels);
 }
 database.compareusers = function(newusers, fn) {
   database.getusers(function(users) {
