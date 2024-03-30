@@ -1,11 +1,9 @@
 // const Database = require("@replit/database");
 
-const db = {};
-
 const database = {};
 module.exports = database;
 
-db.get("users").then(console.log);
+// db.get("users").then(console.log);
 
 database.getwhole = function(fn) {
   // doesn't work
