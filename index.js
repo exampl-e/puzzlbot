@@ -27,10 +27,10 @@ for (const file of commandFiles) {
   client.commands.set(command.data.name, command);
 }
 
-client.once('ready', () => {
+client.once("ready", () => {
 
-  console.log('\nReady!\n');
-  client.user.setActivity('puzzl.surge.sh', { type: 'PLAYING' });
+  console.log("\nReady!\n");
+  client.user.setActivity("puzzl.surge.sh", { type: "PLAYING", });
 
   // a test channel
   guild = client.guilds.cache.get(process.env.GUILD_ID);

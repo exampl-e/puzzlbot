@@ -23,12 +23,12 @@ database.getlevels = function(fn) {
   onValue(ref(db, "/levels"), (snapshot) => {
     fn(snapshot.val());
   });
-}
+};
 database.getusers = function(fn) {
   onValue(ref(db, "/userinfo"), (snapshot) => {
     fn(snapshot.val());
   });
-}
+};
 database.set = function(path, value) {
   set(ref(db, path), value);
 };
