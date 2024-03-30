@@ -1,3 +1,5 @@
 node_modules
+commands_old
 .env
 config.json
+*_old.*
