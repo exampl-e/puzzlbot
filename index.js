@@ -9,7 +9,7 @@ const buttonfunction = require("./button");
 const reactionfunction = require("./reaction");
 const util_roles = require("./roles");
 const update_roles = util_roles.update_roles;
-const { exec } = require('node:child_process');
+const { spawn } = require('child_process');
 
 let guild = null;
 
@@ -181,6 +181,7 @@ client.on("debug", info => {
 client.login(TOKEN);
 // discord end
 
-exec("node ./commands.js");
+// exec("node ./commands.js");
+spawn("node", ["./commands.js"]);
 
 keepAlive();
